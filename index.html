@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rivelle Studio</title>
+  <title>About - Rivelle Studio</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
 
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
+      background-color: #F9F8FF; /* soft lavender */
+      color: #2E2E2E;
+      line-height: 1.6;
       scroll-behavior: smooth;
     }
 
-    a { text-decoration: none; }
+    a { text-decoration: none; color: #2E2E2E; }
 
     /* Navigation Bar */
     #navbar {
@@ -45,15 +48,7 @@
       gap: 30px;
     }
 
-    .nav-links li a {
-      font-weight: 500;
-      transition: color 0.3s ease;
-      color: #2E2E2E;
-    }
-
-    .nav-links li a:hover {
-      color: #B8A4C9; /* lavender */
-    }
+    .nav-links li a:hover { color: #B8A4C9; } /* lavender hover */
 
     /* Hero Section */
     #hero {
@@ -61,7 +56,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 100vh;
+      height: 40vh;
       background-color: #FFF5F8; /* soft pink */
       padding: 0 20px;
     }
@@ -70,82 +65,59 @@
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin-bottom: 0.5rem;
-      color: #2E2E2E;
     }
 
-    #hero .tagline {
-      font-size: 1.5rem;
-      color: #B8A4C9; /* lavender */
-      margin-bottom: 1.5rem;
-    }
-
-    .btn {
-      background-color: #FFD8B8; /* soft peach */
-      color: #2E2E2E;
-      padding: 0.8rem 2rem;
-      border: none;
-      border-radius: 25px;
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #FFC79A; /* darker peach on hover */
-    }
-
-    /* Gallery Section */
-    #gallery {
-      padding: 80px 20px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      background-color: #F0FAF9; /* soft mint */
-    }
-
-    .gallery-item img {
-      width: 100%;
-      max-width: 350px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .gallery-item img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-    }
-
-    /* About Section */
-    #about {
+    /* About Content */
+    #about-content {
       padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
       text-align: center;
-      background-color: #F9F8FF; /* soft lavender */
     }
 
-    #about h2 {
+    #about-content h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
       margin-bottom: 1rem;
       color: #A8D8FF; /* soft blue */
     }
 
-    #about p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: #6E6E6E;
+    #about-content p {
       font-size: 1.1rem;
+      color: #4E4E4E;
+      margin-bottom: 1.2rem;
+    }
+
+    /* Studio photo section */
+    #studio-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    #studio-photo img {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    #studio-photo p {
+      max-width: 500px;
+      color: #4E4E4E;
+      font-size: 1.1rem;
+      text-align: left;
     }
 
     /* Responsive */
     @media (max-width: 768px) {
       #hero h1 { font-size: 2.5rem; }
-      #hero .tagline { font-size: 1.2rem; }
-      .gallery-item img { max-width: 90%; }
-      nav { flex-direction: column; gap: 15px; }
-      .nav-links { flex-direction: column; gap: 15px; }
+      #about-content h2 { font-size: 2rem; }
+      #studio-photo { flex-direction: column; text-align: center; }
+      #studio-photo p { text-align: center; }
     }
-
   </style>
 </head>
 <body>
@@ -155,9 +127,9 @@
     <nav>
       <div class="logo">Rivelle Studio</div>
       <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about-content">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
@@ -165,25 +137,26 @@
   <!-- Hero Section -->
   <section id="hero">
     <div class="hero-content">
-      <h1>Rivelle Studio</h1>
-      <p class="tagline">Soft, peaceful & elegant art for your space</p>
-      <a href="#gallery" class="btn">Explore Our Art</a>
+      <h1>About Rivelle Studio</h1>
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <div class="gallery-container">
-      <div class="gallery-item"><img src="img1.jpg" alt="Art 1"></div>
-      <div class="gallery-item"><img src="img2.jpg" alt="Art 2"></div>
-      <div class="gallery-item"><img src="img3.jpg" alt="Art 3"></div>
-    </div>
-  </section>
+  <!-- About Content Section -->
+  <section id="about-content">
+    <h2>Our Story</h2>
+    <p>Rivelle Studio was created to bring soft, peaceful, and elegant art into every space. Every piece we craft is designed to inspire calm, joy, and creativity. From canvas paintings to digital art, each creation is made with love and attention to detail.</p>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About the Studio</h2>
-    <p>Welcome to Rivelle Studio — where we craft soft, contemplative visuals that bring calm beauty into your space. Whether you love vibrant pieces or serene minimalism, explore our world of expression.</p>
+    <h2>Our Style</h2>
+    <p>We focus on serene color palettes, gentle textures, and whimsical elegance. Our art is perfect for homes, offices, or personal collections that need a touch of calm beauty.</p>
+
+    <h2>Why Choose Us</h2>
+    <p>With over a decade of experience in hand drawing, painting, and digital design, Rivelle Studio combines traditional techniques with modern aesthetics. We are passionate about creating pieces that bring comfort and inspiration to your life.</p>
+
+    <!-- Studio Photo Section -->
+    <div id="studio-photo">
+      <img src="studio.jpg" alt="Studio or Artist Photo">
+      <p>This is where creativity happens! Our studio is a calm, peaceful space designed to inspire every brushstroke and digital creation. Here, we carefully craft each piece to bring serenity and elegance into your space.</p>
+    </div>
   </section>
 
 </body>
