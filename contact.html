@@ -1,29 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivelle Studio - Contact</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Rivelle Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F6F2EE;
+    color: #2B2B2B;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: #FDFBF9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3E2C2C;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background-image: url('https://images.unsplash.com/photo-1520697222860-3f1c8c1b6c8b?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+/* MAIN TEXT */
+.content {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.content h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* IMAGE STRIP */
+.image-strip {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.image-strip img {
+    width: 250px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.image-strip img:hover {
+    transform: scale(1.05);
+}
+
+/* DARK SECTION */
+.dark {
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.dark h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.dark p {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2E2E2E;
+    color: white;
+}
+
+</style>
 </head>
+
 <body>
 
-    <section>
-        <h2>Contact Rivelle Studio</h2>
-        <p>You can contact me for custom orders.</p>
-        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-        <p>WhatsApp: +947xxxxxxxx</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-        <p>Get updates with me on:</p>
-        <div class="contact-icons">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/TikTok_logo.png" alt="TikTok"></a>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="hero">
+    <h1>Rivelle Studio</h1>
+</section>
 
-    <footer>
-        &copy; 2026 Rivelle Studio. All rights reserved.
-    </footer>
+<!-- TEXT -->
+<section class="content">
+    <h2>A Decade of Art & Expression</h2>
+    <p>
+        I have been creating art for more than a decade, exploring both digital and physical mediums across different styles.
+        My work focuses on softness, elegance, and peaceful emotions that bring calm into your space.
+    </p>
+
+    <p>
+        Every piece can be customized to your own vision. Whether it’s a specific color palette, mood, or concept,
+        I create art that feels personal and meaningful to you.
+    </p>
+
+    <p>
+        Welcome to my little art space, thoughtfully created and run by myself.
+    </p>
+</section>
+
+<!-- IMAGES -->
+<section class="image-strip">
+    <img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1527259252984-cc9cf98a51eb?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80">
+</section>
+
+<!-- DARK SECTION -->
+<section class="dark">
+    <h2>Elegant. Peaceful. Personal.</h2>
+    <p>
+        Art designed to bring warmth, beauty, and quiet luxury into your everyday life.
+    </p>
+</section>
+
+<footer>
+    © 2026 Rivelle Studio
+</footer>
 
 </body>
 </html>
