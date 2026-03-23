@@ -1,119 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rivelle Studio - Elegant Art</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Rivelle Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #D8C4B6; /* pastel brown */
-      color: #1E1E1E; /* black text */
-    }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9F8F7; /* neutral pastel background */
+            color: #333; /* dark gray for text for contrast */
+            line-height: 1.7;
+        }
 
-    nav {
-      background-color: #FFFFFF; /* white nav */
-      padding: 15px 0;
-      text-align: center;
-      font-weight: bold;
-    }
-    nav a {
-      margin: 0 20px;
-      color: #1E1E1E;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    nav a:hover {
-      color: #555;
-    }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
 
-    /* Hero */
-    .hero {
-      height: 80vh;
-      background-image: url("https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=1470&q=80");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      background-blend-mode: multiply;
-      background-color: rgba(0,0,0,0.4);
-    }
-    .hero h1 {
-      font-size: 60px;
-      margin: 0;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-top: 10px;
-    }
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #EDEAE5; /* subtle neutral header */
+        }
 
-    /* Featured Section */
-    .featured {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #FFFFFF;
-    }
-    .featured h2 {
-      margin-bottom: 30px;
-      font-size: 28px;
-    }
-    .art-grid {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .art-grid img {
-      width: 280px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+        header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: #2C2A28;
+            margin-bottom: 10px;
+        }
 
-    /* Footer */
-    footer {
-      padding: 20px;
-      text-align: center;
-      background-color: #1E1E1E;
-      color: white;
-      font-size: 14px;
-    }
-  </style>
+        header p {
+            font-size: 1.1rem;
+            color: #5B5955;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        main p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #4B4843;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #EDEAE5;
+            color: #5B5955;
+            font-size: 0.9rem;
+        }
+
+        /* Navigation Link to Home */
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #DAD7D2; /* soft neutral button */
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .home-link:hover {
+            background-color: #CFCAC4;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>About Us</h1>
+        <p>Learn more about Rivelle Studio and my art journey</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="shop.html">Shop</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <main>
+        <p>Welcome to <strong>Rivelle Studio</strong>! I’ve been creating art for over <strong>10 years</strong>, exploring both <strong>digital illustrations</strong> and <strong>traditional art</strong> on canvas, paper, and more. Each piece is crafted with care to bring soft, peaceful, and elegant vibes to your space.</p>
 
-  <section class="hero">
-    <div>
-      <h1>Rivelle Studio</h1>
-      <p>Elegant, peaceful art for your space</p>
-    </div>
-  </section>
+        <p>Here, you can <strong>browse and enjoy the artwork</strong> at your own pace, or <strong>customize your order</strong> to get something unique just for you. My goal is to make art that inspires, comforts, and adds a touch of beauty to your life.</p>
 
-  <section class="featured">
-    <h2>Featured Art Pieces</h2>
-    <div class="art-grid">
-      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Art 1">
-      <img src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?auto=format&fit=crop&w=800&q=80" alt="Art 2">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Art 3">
-    </div>
-  </section>
+        <a href="index.html" class="home-link">Back to Home</a>
+    </main>
 
-  <footer>
-    © 2026 Rivelle Studio — Elegant, peaceful art for your space
-  </footer>
-
+    <footer>
+        &copy; 2026 Rivelle Studio. All rights reserved.
+    </footer>
 </body>
 </html>
