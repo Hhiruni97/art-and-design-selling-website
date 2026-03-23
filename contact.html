@@ -1,176 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Rivelle Studio</title>
-    <!-- Tailwind CSS with custom config -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        stone: {
-                            50: '#FDFBF7',
-                            100: '#F4F1EA',
-                            800: '#2D2B2A',
-                            900: '#1A1A1A',
-                        },
-                        accent: '#8B8070',
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['"Inter"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Rivelle Studio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #FDFBF7; /* soft cream */
+      scroll-behavior: smooth;
+      color: #2E2E2E;
+    }
+
+    a { text-decoration: none; color: #2E2E2E; }
+
+    /* Navigation Bar */
+    #navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: #FAFAF8;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #2E2E2E;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a:hover { color: #B8A4C9; } /* lavender hover */
+
+    /* Hero Section */
+    #hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 40vh;
+      background-color: #FFF5F8; /* soft pink */
+      padding: 0 20px;
+    }
+
+    #hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Contact Section */
+    #contact-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #contact-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #A8D8FF; /* soft blue */
+    }
+
+    #contact-section p {
+      font-size: 1.1rem;
+      color: #4E4E4E;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #F9F8FF; /* soft lavender */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      resize: none;
+    }
+
+    button {
+      background-color: #FFD8B8; /* soft peach */
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #FFC79A; /* darker peach */
+    }
+
+    /* Contact Info Section */
+    #contact-info {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #hero h1 { font-size: 2.5rem; }
+      form { padding: 20px; }
+    }
+
+  </style>
 </head>
-<body class="bg-stone-50 text-stone-900 antialiased selection:bg-accent selection:text-white pt-24">
+<body>
 
-    <!-- Navigation (White BG for this page) -->
-    <nav id="navbar" class="fixed w-full z-50 top-0 left-0 transition-all duration-500 py-4 bg-stone-50 border-b border-stone-200">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-serif font-medium tracking-wide">Rivelle Studio.</a>
-            
-            <div class="hidden md:flex items-center space-x-10 text-sm uppercase tracking-widest font-medium text-stone-800">
-                <a href="index.html" class="hover-underline">Home</a>
-                <a href="shop.html" class="hover-underline">Shop</a>
-                <a href="about.html" class="hover-underline">About</a>
-                <a href="contact.html" class="hover-underline border-b border-stone-900 pb-1">Contact</a>
-            </div>
-
-            <div class="flex items-center space-x-6">
-                <!-- Search icon -->
-                <button class="hidden md:block hover:text-accent transition-colors">
-                    <i class="ph ph-magnifying-glass text-xl"></i>
-                </button>
-                <!-- Cart icon -->
-                <a href="shop.html" class="relative hover:text-accent transition-colors flex items-center">
-                    <i class="ph ph-tote text-xl"></i>
-                    <span id="cart-count" class="hidden absolute -top-2 -right-2 bg-accent text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full transition-transform">0</span>
-                </a>
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-2xl">
-                    <i class="ph ph-list"></i>
-                </button>
-            </div>
-        </div>
+  <!-- Navigation Bar -->
+  <header id="navbar">
+    <nav>
+      <div class="logo">Rivelle Studio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-stone-50 z-40 hidden flex flex-col pt-32 px-6">
-        <div class="flex flex-col space-y-8 text-2xl font-serif">
-            <a href="index.html" class="border-b border-stone-200 pb-2">Home</a>
-            <a href="shop.html" class="border-b border-stone-200 pb-2">Shop</a>
-            <a href="about.html" class="border-b border-stone-200 pb-2">About</a>
-            <a href="contact.html" class="border-b border-stone-900 pb-2">Contact</a>
-        </div>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
     </div>
+  </section>
 
-    <!-- Contact Section -->
-    <main class="py-24 md:py-32 px-6 fade-in">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
-            <!-- Info & Form -->
-            <div>
-                <h1 class="text-4xl md:text-5xl font-serif mb-6 leading-tight">Get in Touch</h1>
-                <p class="text-stone-600 font-light mb-12 text-balance leading-relaxed">
-                    Whether you have questions about specific artworks, require assistance with an order, or seek consultation for curating a space, we are here to assist you.
-                </p>
-                
-                <div class="space-y-8 mb-16">
-                    <div>
-                        <h4 class="font-medium uppercase tracking-widest text-sm mb-2 text-stone-900">Email</h4>
-                        <p class="text-stone-600 font-light"><a href="mailto:inquiries@rivellestudio.com" class="hover:text-stone-900 transition-colors">inquiries@rivellestudio.com</a></p>
-                    </div>
-                    <div>
-                        <h4 class="font-medium uppercase tracking-widest text-sm mb-2 text-stone-900">Studio Hours</h4>
-                        <p class="text-stone-600 font-light">Monday &mdash; Friday<br>10:00 AM &mdash; 5:00 PM EST</p>
-                    </div>
-                </div>
+  <!-- Contact Section -->
+  <section id="contact-section">
+    <h2>Get in Touch</h2>
+    <p>Have questions or want to commission a piece? Fill out the form below or use the contact info to reach us directly.</p>
 
-                <!-- Form -->
-                <form class="space-y-8" onsubmit="event.preventDefault(); showToast('Your message has been sent. We will reply shortly.');">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <label class="block font-medium uppercase tracking-widest text-xs mb-3 text-stone-600">First Name</label>
-                            <input type="text" required class="w-full pb-3 bg-transparent border-b border-stone-300 focus:outline-none focus:border-stone-900 transition-colors font-light">
-                        </div>
-                        <div>
-                            <label class="block font-medium uppercase tracking-widest text-xs mb-3 text-stone-600">Last Name</label>
-                            <input type="text" required class="w-full pb-3 bg-transparent border-b border-stone-300 focus:outline-none focus:border-stone-900 transition-colors font-light">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block font-medium uppercase tracking-widest text-xs mb-3 text-stone-600">Email Address</label>
-                        <input type="email" required class="w-full pb-3 bg-transparent border-b border-stone-300 focus:outline-none focus:border-stone-900 transition-colors font-light">
-                    </div>
-                    <div>
-                        <label class="block font-medium uppercase tracking-widest text-xs mb-3 text-stone-600">Message</label>
-                        <textarea rows="4" required class="w-full pb-3 bg-transparent border-b border-stone-300 focus:outline-none focus:border-stone-900 transition-colors font-light resize-none"></textarea>
-                    </div>
-                    <button type="submit" class="px-10 py-4 bg-stone-900 text-white uppercase tracking-widest text-sm hover:bg-accent transition-colors w-full sm:w-auto">Send Message</button>
-                </form>
-            </div>
+    <!-- Contact Form -->
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-            <!-- Image -->
-            <div class="hidden lg:block h-full">
-                <div class="img-hover-zoom w-full h-full min-h-[600px] bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=1200&auto=format&fit=crop" alt="Aesthetic ambiance" class="w-full h-full object-cover">
-                </div>
-            </div>
-        </div>
-    </main>
+    <!-- Contact Info -->
+    <div id="contact-info">
+      <p>Email: <strong>hello@rivellestudio.com</strong></p>
+      <p>Phone: <strong>+94 77 123 4567</strong></p>
+      <p>Location: <strong>Kegalle, Sri Lanka</strong></p>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-stone-100 pt-20 pb-10 px-6 mt-16">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-            <div class="md:col-span-2">
-                <h3 class="text-2xl font-serif mb-6">Rivelle Studio.</h3>
-                <p class="text-stone-600 font-light max-w-md leading-relaxed mb-6">
-                    A destination for exquisite aesthetic fine art and photography, curated to elevate your surroundings.
-                </p>
-                <div class="flex space-x-6 text-xl text-stone-600">
-                    <a href="#" class="hover:text-stone-900 transition-colors"><i class="ph ph-instagram-logo"></i></a>
-                    <a href="#" class="hover:text-stone-900 transition-colors"><i class="ph ph-pinterest-logo"></i></a>
-                    <a href="#" class="hover:text-stone-900 transition-colors"><i class="ph ph-twitter-logo"></i></a>
-                </div>
-            </div>
-            
-            <div>
-                <h4 class="font-medium uppercase tracking-widest text-sm mb-6 text-stone-900">Explore</h4>
-                <ul class="space-y-4 text-stone-600 font-light">
-                    <li><a href="shop.html" class="hover:text-stone-900 transition-colors">Shop All</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">Photography</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">Original Paintings</a></li>
-                    <li><a href="about.html" class="hover:text-stone-900 transition-colors">Our Story</a></li>
-                </ul>
-            </div>
-            
-            <div>
-                <h4 class="font-medium uppercase tracking-widest text-sm mb-6 text-stone-900">Assistance</h4>
-                <ul class="space-y-4 text-stone-600 font-light">
-                    <li><a href="contact.html" class="hover:text-stone-900 transition-colors">Contact Us</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">Shipping & Returns</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">FAQ</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">Terms of Service</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto border-t border-stone-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-stone-500 font-light">
-            <p>&copy; 2026 Rivelle Studio. All rights reserved.</p>
-            <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-stone-900 transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-stone-900 transition-colors">Terms</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
