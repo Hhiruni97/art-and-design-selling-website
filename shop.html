@@ -3,117 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - Rivelle Studio</title>
+<title>Shop - Rivelle Studio</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+body{margin:0;font-family:'Inter',sans-serif;background:#FDF9F2;color:#2E2E2E;scroll-behavior:smooth;}
+a{text-decoration:none;color:#2E2E2E;}
+#navbar{position:sticky;top:0;width:100%;background:#FFF8F2;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
+.logo{font-family:'Playfair Display', serif;font-size:1.8rem;font-weight:bold;}
+.nav-links{list-style:none;display:flex;gap:30px;}
+.nav-links li a:hover{color:#C2A974;}
 
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #FDFBF7;
-  color: #2E2E2E;
-  scroll-behavior: smooth;
-}
+#hero{display:flex;justify-content:center;align-items:center;height:50vh;background:#C2A974;color:#FFF;text-align:center;}
+#hero h1{font-family:'Playfair Display', serif;font-size:3rem;}
 
-a { text-decoration: none; color: #2E2E2E; }
+#shop-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;padding:60px 20px;}
+.shop-item{background:#FFF8F2;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:transform .3s, box-shadow .3s;width:300px;text-align:center;}
+.shop-item img{width:100%; display:block;}
+.shop-item:hover{transform:scale(1.05); box-shadow:0 12px 30px rgba(0,0,0,0.15);}
+.shop-item h3{font-family:'Playfair Display', serif;margin:15px 0 5px 0;}
+.shop-item p{margin:5px 0 15px 0;}
+.shop-item button{background:#C2A974;color:#FFF;border:none;padding:12px 20px;border-radius:25px;margin-bottom:15px;cursor:pointer;transition:0.3s;}
+.shop-item button:hover{background:#A98C5B;}
 
-#navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: #FAFAF8;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2E2E2E;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links li a:hover { color: #B8A4C9; }
-
-/* Hero Section */
-#hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 40vh;
-  background-color: #FFF5F8;
-  padding: 0 20px;
-}
-
-#hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-/* About Content Section */
-#about-content {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#about-content h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #A8D8FF;
-}
-
-#about-content p {
-  font-size: 1.1rem;
-  color: #4E4E4E;
-  margin-bottom: 1.5rem;
-}
-
-/* About Images Section */
-#about-images {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-#about-images img {
-  max-width: 300px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-#about-images img:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  #hero h1 { font-size: 2.5rem; }
-  #about-images { flex-direction: column; align-items: center; }
-}
+@media(max-width:768px){#hero h1{font-size:2.5rem;} .shop-item{width:90%;}}
 </style>
 </head>
 <body>
 
-<!-- Navbar -->
 <header id="navbar">
 <nav>
 <div class="logo">Rivelle Studio</div>
@@ -121,36 +38,20 @@ nav {
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="gallery.html">Gallery</a></li>
+<li><a href="shop.html">Shop</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
 </header>
 
-<!-- Hero -->
-<section id="hero">
-<div class="hero-content">
-<h1>About Rivelle Studio</h1>
-</div>
-</section>
+<section id="hero"><h1>Shop Our Art</h1></section>
 
-<!-- About Content -->
-<section id="about-content">
-<h2>Our Story</h2>
-<p>Rivelle Studio was created to bring soft, peaceful, and elegant art into every space. Every piece we craft inspires calm, joy, and creativity.</p>
-
-<h2>Our Style</h2>
-<p>We focus on serene color palettes, gentle textures, and whimsical elegance. Perfect for homes, offices, or collections needing calm beauty.</p>
-
-<h2>Why Choose Us</h2>
-<p>With over a decade of experience in hand drawing, painting, and digital design, Rivelle Studio combines traditional techniques with modern aesthetics.</p>
-
-<!-- Images -->
-<div id="about-images">
-<img src="studio1.jpg" alt="Studio 1">
-<img src="studio2.jpg" alt="Studio 2">
-<img src="studio3.jpg" alt="Studio 3">
-</div>
-
+<section id="shop-grid">
+<div class="shop-item"><img src="art1.jpg" alt="Art 1"><h3>Art 1</h3><p>$50</p><button>Buy</button></div>
+<div class="shop-item"><img src="art2.jpg" alt="Art 2"><h3>Art 2</h3><p>$70</p><button>Buy</button></div>
+<div class="shop-item"><img src="art3.jpg" alt="Art 3"><h3>Art 3</h3><p>$100</p><button>Buy</button></div>
+<div class="shop-item"><img src="art4.jpg" alt="Art 4"><h3>Art 4</h3><p>$120</p><button>Buy</button></div>
+<div class="shop-item"><img src="art5.jpg" alt="Art 5"><h3>Art 5</h3><p>$150</p><button>Buy</button></div>
 </section>
 
 </body>
