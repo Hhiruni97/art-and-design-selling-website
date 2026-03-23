@@ -1,36 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivelle Studio - Home</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rivelle Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F6F2EE;
+    color: #2B2B2B;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: #FDFBF9;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3E2C2C;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(255,255,255,0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin: 0;
+    color: #3E2C2C;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* FEATURED ART */
+.art-section {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.art-card {
+    width: 280px;
+}
+
+.art-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.art-card p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ABOUT PREVIEW */
+.about-preview {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2E2E2E;
+    color: white;
+    margin-top: 50px;
+}
+
+</style>
 </head>
+
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="shop.html">Shop</a>
-        <a href="shop-item.htmal>Shop</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Shop</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <header class="hero">
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
         <h1>Rivelle Studio</h1>
         <p>Elegant, peaceful art for your space</p>
-    </header>
+    </div>
+</section>
 
-    <section class="gallery">
-        <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?auto=format&fit=crop&w=800&q=80" alt="Art sample 1">
-        <img src="https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?auto=format&fit=crop&w=800&q=80" alt="Art sample 2">
-        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Art sample 3">
-    </section>
+<!-- FEATURED -->
+<h2 class="section-title">Featured Art</h2>
 
-    <footer>
-        &copy; 2026 Rivelle Studio. All rights reserved.
-    </footer>
+<div class="art-section">
+    <div class="art-card">
+        <img src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?auto=format&fit=crop&w=800&q=80">
+        <p>Soft Floral Canvas</p>
+    </div>
+
+    <div class="art-card">
+        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80">
+        <p>Pastel Abstract</p>
+    </div>
+
+    <div class="art-card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80">
+        <p>Elegant Interior Art</p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about-preview">
+    <h2>Welcome to Rivelle Studio</h2>
+    <p>
+        A peaceful space filled with elegant art created to bring calm and beauty into your surroundings.
+        Explore soft florals, gentle tones, and timeless pieces made with love.
+    </p>
+</div>
+
+<footer>
+    © 2026 Rivelle Studio
+</footer>
 
 </body>
 </html>
