@@ -1,119 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rivelle Studio - Elegant Art</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivelle Studio | Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pApI7H/V6Ab1s5LRfITg9c5Z4j6T1XkV8HzMxJ9i5RgFt0hQXG+gxL5X0KqZrjZy3m4ld9n7Oe0z7vQ7o5qxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* --- Global Styles --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #D8C4B6; /* pastel brown */
-      color: #1E1E1E; /* black text */
-    }
+        html, body {
+            height: 100%;
+        }
 
-    nav {
-      background-color: #FFFFFF; /* white nav */
-      padding: 15px 0;
-      text-align: center;
-      font-weight: bold;
-    }
-    nav a {
-      margin: 0 20px;
-      color: #1E1E1E;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    nav a:hover {
-      color: #555;
-    }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF7;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+        }
 
-    /* Hero */
-    .hero {
-      height: 80vh;
-      background-image: url("https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=1470&q=80");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      background-blend-mode: multiply;
-      background-color: rgba(0,0,0,0.4);
-    }
-    .hero h1 {
-      font-size: 60px;
-      margin: 0;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-top: 10px;
-    }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    /* Featured Section */
-    .featured {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #FFFFFF;
-    }
-    .featured h2 {
-      margin-bottom: 30px;
-      font-size: 28px;
-    }
-    .art-grid {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .art-grid img {
-      width: 280px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+        /* --- Header --- */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 60px 20px 40px 20px;
+            background: linear-gradient(135deg, #CBAF91, #FDFBF7);
+        }
 
-    /* Footer */
-    footer {
-      padding: 20px;
-      text-align: center;
-      background-color: #1E1E1E;
-      color: white;
-      font-size: 14px;
-    }
-  </style>
+        header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: #5C3A21;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #3E2C1C;
+        }
+
+        /* --- Navigation Menu (Top Right) --- */
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            padding: 8px 15px;
+            background-color: #CBAF91;
+            color: #fff;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5C3A21;
+            color: #fff;
+        }
+
+        /* --- Contact Section --- */
+        .content-wrapper {
+            flex: 1;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contact-message {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #5C3A21;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: #3E2C1C;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #CBAF91;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 25px;
+            font-size: 2rem;
+        }
+
+        .social-icons a {
+            color: #5C3A21;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #CBAF91;
+            transform: scale(1.2);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #CBAF91;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        /* --- Make footer stick to bottom --- */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+    </style>
 </head>
-
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="shop.html">Shop</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <!-- Header -->
+    <header>
+        <h1>Rivelle Studio</h1>
+        <p>Soft, peaceful, and elegant art for your space</p>
 
-  <section class="hero">
-    <div>
-      <h1>Rivelle Studio</h1>
-      <p>Elegant, peaceful art for your space</p>
+        <!-- Top Right Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <div class="contact-message">
+            You can contact me for custom orders.
+        </div>
+
+        <div class="contact-info">
+            <div>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></div>
+            <div>WhatsApp: <a href="https://wa.me/1234567890" target="_blank">+123 456 7890</a></div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@yourprofile" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
     </div>
-  </section>
 
-  <section class="featured">
-    <h2>Featured Art Pieces</h2>
-    <div class="art-grid">
-      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Art 1">
-      <img src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?auto=format&fit=crop&w=800&q=80" alt="Art 2">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Art 3">
-    </div>
-  </section>
-
-  <footer>
-    © 2026 Rivelle Studio — Elegant, peaceful art for your space
-  </footer>
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Rivelle Studio | 
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="shop.html">Shop</a> | 
+        <a href="gallery.html">Gallery</a> | 
+        <a href="contact.html">Contact</a>
+    </footer>
 
 </body>
 </html>
