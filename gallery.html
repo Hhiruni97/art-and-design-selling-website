@@ -6,13 +6,14 @@
 <title>Gallery - Rivelle Studio</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-    /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background-color: #FDFBF7; color: #2C2A28; line-height: 1.7; }
+    body { 
+        font-family: 'Inter', sans-serif; 
+        background: url('/images/wavy-bg.jpg') center/cover no-repeat; /* replace with your wavy image */ 
+        color: #2C2A28; 
+        line-height: 1.7;
+    }
 
-    a { text-decoration: none; color: inherit; }
-
-    /* Navigation Bar */
     nav {
         background-color: #DAD7D2;
         display: flex;
@@ -34,74 +35,47 @@
     }
     nav a:hover { background-color: #CFCAC4; }
 
-    /* Header */
     header {
         text-align: center;
-        padding: 80px 20px 40px;
-        background-color: #FFFFFF;
+        padding: 80px 20px 20px;
+    }
+    header h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 3rem;
         color: #3B2F2F;
-        border-radius: 20px;
-        max-width: 800px;
-        margin: 50px auto 20px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        position: relative;
-        overflow: hidden;
+        margin-bottom: 10px;
     }
-    header h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; }
+    header p { font-size: 1.2rem; color: #5B5955; }
 
-    header::before {
-        content: '';
-        position: absolute;
-        top: -50px; left: -50px;
-        width: 150px; height: 150px;
-        background-color: #DAD7D2;
-        border-radius: 50%;
-        z-index: -1;
-    }
-    header::after {
-        content: '';
-        position: absolute;
-        bottom: -70px; right: -60px;
-        width: 200px; height: 200px;
-        background-color: #F2E9E4;
-        border-radius: 50%;
-        z-index: -1;
-    }
-
-    /* Gallery Grid */
     main {
         max-width: 1200px;
-        margin: 50px auto;
+        margin: 30px auto;
         padding: 0 20px 50px;
     }
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 30px;
     }
     .grid-item {
         background-color: #FFFFFF;
         border-radius: 20px;
         overflow: hidden;
-        position: relative;
         transition: transform 0.3s, box-shadow 0.3s;
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
     .grid-item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-
     .grid-item img {
         width: 100%;
         display: block;
         border-radius: 20px;
     }
 
-    /* Buttons */
     .btn {
         display: inline-block;
         margin-top: 30px;
         padding: 14px 28px;
-        background-color: #5A463F; /* brown button */
+        background-color: #5A463F;
         color: #FFFFFF;
         border-radius: 15px;
         font-weight: 500;
@@ -109,7 +83,6 @@
     }
     .btn:hover { background-color: #3B2F2F; }
 
-    /* Footer */
     footer {
         text-align: center;
         padding: 35px 20px;
@@ -119,16 +92,9 @@
         margin-top: 50px;
         border-top: 1px solid #CFCAC4;
     }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-        header h1 { font-size: 2.2rem; }
-        nav a { margin: 0 8px; padding: 6px 12px; font-size: 0.95rem; }
-    }
 </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
@@ -136,26 +102,23 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Header -->
     <header>
         <h1>Gallery</h1>
-        <p>Explore Rivelle Studio's digital and traditional artworks</p>
+        <p>Explore beautiful artworks handpicked from elegant collections</p>
     </header>
 
-    <!-- Gallery Grid -->
     <main>
         <div class="grid">
-            <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+1" alt="Art 1"></div>
-            <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+2" alt="Art 2"></div>
-            <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+3" alt="Art 3"></div>
-            <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+4" alt="Art 4"></div>
-            <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+5" alt="Art 5"></div>
+            <div class="grid-item"><img src="IMAGE1_URL_HERE" alt="Art 1"></div>
+            <div class="grid-item"><img src="IMAGE2_URL_HERE" alt="Art 2"></div>
+            <div class="grid-item"><img src="IMAGE3_URL_HERE" alt="Art 3"></div>
+            <div class="grid-item"><img src="IMAGE4_URL_HERE" alt="Art 4"></div>
+            <div class="grid-item"><img src="IMAGE5_URL_HERE" alt="Art 5"></div>
         </div>
 
         <a href="index.html" class="btn">Back to Home</a>
     </main>
 
-    <!-- Footer -->
     <footer>
         &copy; 2026 Rivelle Studio. All rights reserved.
     </footer>
