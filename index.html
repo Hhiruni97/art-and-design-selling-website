@@ -1,16 +1,7 @@
-<!-- ====== Navigation Bar ====== -->
-<header id="navbar">
-  <nav>
-    <div class="logo">Rivelle Studio</div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav>
-</header>
+<!-- ====== Homepage Content ====== -->
+<!-- Add this inside your <body> tag -->
 
-<!-- ====== Hero Section ====== -->
+<!-- Hero Section -->
 <section id="hero">
   <div class="hero-content">
     <h1>Rivelle Studio</h1>
@@ -19,7 +10,7 @@
   </div>
 </section>
 
-<!-- ====== Gallery Section ====== -->
+<!-- Gallery Section -->
 <section id="gallery">
   <div class="gallery-container">
     <div class="gallery-item"><img src="img1.jpg" alt="Art 1"></div>
@@ -28,7 +19,7 @@
   </div>
 </section>
 
-<!-- ====== About Section ====== -->
+<!-- About Section -->
 <section id="about">
   <h2>About the Studio</h2>
   <p>Welcome to Rivelle Studio — where we craft soft, contemplative visuals that bring calm beauty into your space. Whether you love vibrant pieces or serene minimalism, explore our world of expression.</p>
@@ -39,58 +30,12 @@
   /* Fonts */
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
 
-  /* General */
   body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     background-color: #FAFAF8;
     color: #2E2E2E;
     line-height: 1.6;
-    scroll-behavior: smooth;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  /* ===== Navigation Bar ===== */
-  #navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #FAFAF8;
-    z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-  }
-
-  .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #2E2E2E;
-    font-weight: bold;
-  }
-
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-  }
-
-  .nav-links li a {
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-
-  .nav-links li a:hover {
-    color: #B8A4C9;
   }
 
   /* Hero Section */
@@ -187,16 +132,6 @@
 
     .gallery-item img {
       max-width: 90%;
-    }
-
-    nav {
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .nav-links {
-      flex-direction: column;
-      gap: 15px;
     }
   }
 </style>
