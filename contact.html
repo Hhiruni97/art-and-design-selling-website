@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop - Rivelle Studio</title>
+<title>Contact - Rivelle Studio</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@300;400;500&display=swap');
 
@@ -16,17 +16,17 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:15px 4
 .nav-links li a:hover{color:#C2A974;}
 
 #hero{display:flex;justify-content:center;align-items:center;height:50vh;background:#C2A974;color:#FFF;text-align:center;}
-#hero h1{font-family:'Cormorant Garamond', serif; font-size:3rem;}
+#hero h1{font-family:'Cormorant Garamond', serif;font-size:3rem;}
 
-#shop-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;padding:60px 20px;}
-.shop-item{background:#FFF8F2;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:transform .3s, box-shadow .3s;width:300px;text-align:center;}
-.shop-item img{width:100%; display:block;}
-.shop-item:hover{transform:scale(1.05); box-shadow:0 12px 30px rgba(0,0,0,0.15);}
-.shop-item h3{font-family:'Cormorant Garamond', serif;margin:15px 0 5px 0;}
-.shop-item p{margin:5px 0 15px 0;}
-.shop-item button{background:#C2A974;color:#FFF;border:none;padding:12px 20px;border-radius:25px;margin-bottom:15px;cursor:pointer;transition:0.3s;}
-.shop-item button:hover{background:#A98C5B;}
-@media(max-width:768px){#hero h1{font-size:2.5rem;} .shop-item{width:90%;}}
+#contact-section{max-width:900px;margin:0 auto;padding:60px 20px;text-align:center;}
+#contact-section h2{font-family:'Cormorant Garamond', serif;font-size:2.5rem;margin-bottom:1rem;color:#C2A974;}
+#contact-section p{margin-bottom:1.5rem;}
+form{display:flex;flex-direction:column;gap:20px;background:#FFF8F2;padding:30px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+input,textarea{padding:12px 15px;border:1px solid #ccc;border-radius:8px;font-size:1rem;font-family:'Inter',sans-serif;resize:none;}
+button{background:#C2A974;color:#FFF;border:none;padding:12px 20px;border-radius:25px;cursor:pointer;transition:0.3s;}
+button:hover{background:#A98C5B;}
+#contact-info{margin-top:50px;display:flex;flex-direction:column;gap:15px;text-align:center;}
+@media(max-width:768px){#hero h1{font-size:2.5rem;} form{padding:20px;}}
 </style>
 </head>
 <body>
@@ -42,14 +42,23 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:15px 4
 </nav>
 </header>
 
-<section id="hero"><h1>Shop Our Art</h1></section>
+<section id="hero"><h1>Contact Us</h1></section>
 
-<section id="shop-grid">
-<div class="shop-item"><img src="images/art1.jpg" alt="Art 1"><h3>Art 1</h3><p>$50</p><button>Buy</button></div>
-<div class="shop-item"><img src="images/art2.jpg" alt="Art 2"><h3>Art 2</h3><p>$70</p><button>Buy</button></div>
-<div class="shop-item"><img src="images/art3.jpg" alt="Art 3"><h3>Art 3</h3><p>$100</p><button>Buy</button></div>
-<div class="shop-item"><img src="images/art4.jpg" alt="Art 4"><h3>Art 4</h3><p>$120</p><button>Buy</button></div>
-<div class="shop-item"><img src="images/art5.jpg" alt="Art 5"><h3>Art 5</h3><p>$150</p><button>Buy</button></div>
+<section id="contact-section">
+<h2>Get in Touch</h2>
+<p>Questions or commissions? Reach out using the form below:</p>
+<form>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<div id="contact-info">
+<p>Email: <strong>hello@rivellestudio.com</strong></p>
+<p>Phone: <strong>+94 77 123 4567</strong></p>
+<p>Location: <strong>Kegalle, Sri Lanka</strong></p>
+</div>
 </section>
 </body>
 </html>
