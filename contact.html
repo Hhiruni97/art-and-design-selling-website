@@ -1,64 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Rivelle Studio</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@300;400;500&display=swap');
-
-body{margin:0;font-family:'Inter',sans-serif;background:#FDF9F2;color:#2E2E2E;scroll-behavior:smooth;}
-a{text-decoration:none;color:#2E2E2E;}
-#navbar{position:sticky;top:0;width:100%;background:#FFF8F2;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
-nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
-.logo{font-family:'Cormorant Garamond', serif; font-size:2.4rem; font-weight:700; color:#1C1C1C; text-shadow:2px 2px 5px rgba(0,0,0,0.2);}
-.nav-links{list-style:none; display:flex; gap:30px;}
-.nav-links li a:hover{color:#C2A974;}
-
-#hero{display:flex;justify-content:center;align-items:center;height:50vh;background:#C2A974;color:#FFF;text-align:center;}
-#hero h1{font-family:'Cormorant Garamond', serif;font-size:3rem;}
-
-#contact-section{max-width:900px;margin:0 auto;padding:60px 20px;text-align:center;}
-#contact-section h2{font-family:'Cormorant Garamond', serif;font-size:2.5rem;margin-bottom:1rem;color:#C2A974;}
-#contact-section p{margin-bottom:1.5rem;}
-form{display:flex;flex-direction:column;gap:20px;background:#FFF8F2;padding:30px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);}
-input,textarea{padding:12px 15px;border:1px solid #ccc;border-radius:8px;font-size:1rem;font-family:'Inter',sans-serif;resize:none;}
-button{background:#C2A974;color:#FFF;border:none;padding:12px 20px;border-radius:25px;cursor:pointer;transition:0.3s;}
-button:hover{background:#A98C5B;}
-#contact-info{margin-top:50px;display:flex;flex-direction:column;gap:15px;text-align:center;}
-@media(max-width:768px){#hero h1{font-size:2.5rem;} form{padding:20px;}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivelle Studio - Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="navbar">
-<nav>
-<div class="logo">Rivelle Studio</div>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="shop.html">Shop</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
 
-<section id="hero"><h1>Contact Us</h1></section>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<section id="contact-section">
-<h2>Get in Touch</h2>
-<p>Questions or commissions? Reach out using the form below:</p>
-<form>
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
+    <section>
+        <h2>Contact Rivelle Studio</h2>
+        <p>You can contact me for custom orders.</p>
+        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+        <p>WhatsApp: +947xxxxxxxx</p>
 
-<div id="contact-info">
-<p>Email: <strong>hello@rivellestudio.com</strong></p>
-<p>Phone: <strong>+94 77 123 4567</strong></p>
-<p>Location: <strong>Kegalle, Sri Lanka</strong></p>
-</div>
-</section>
+        <p>Get updates with me on:</p>
+        <div class="contact-icons">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/TikTok_logo.png" alt="TikTok"></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Rivelle Studio. All rights reserved.
+    </footer>
+
 </body>
 </html>
