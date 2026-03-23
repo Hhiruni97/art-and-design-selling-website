@@ -1,6 +1,116 @@
-<header>
-  <h1>Rivelle Studio</h1>
-  <p>Contact me for custom orders!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Rivelle Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fdfbf7; /* soft pastel background */
+      color: #000; /* default text color */
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(135deg, #a97c50, #fdfbf7); /* elegant brown mix */
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0 0 10px;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    .contact-section {
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-item i {
+      margin-right: 10px;
+      font-size: 1.5rem;
+      color: #a97c50; /* brown icon color */
+      transition: color 0.3s;
+    }
+
+    .contact-item a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s;
+    }
+
+    .contact-item a:hover i,
+    .contact-item a:hover {
+      color: #5c3b1f; /* darker brown on hover */
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #a97c50;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .contact-item {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rivelle Studio</h1>
+    <p>Contact me for custom orders!</p>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:your-email@example.com">your-email@example.com</a>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-whatsapp"></i>
+      <a href="https://wa.me/your-number" target="_blank">Chat on WhatsApp</a>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-instagram"></i>
+      <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-tiktok"></i>
+      <a href="https://tiktok.com/@yourprofile" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Rivelle Studio. All rights reserved.
+  </footer>
+
 
   <!-- Navigation -->
   <nav style="margin-top: 20px;">
@@ -11,3 +121,5 @@
     <a href="contact.html" style="margin: 0 15px; color: #fff; text-decoration: none; font-weight: bold;">Contact</a>
   </nav>
 </header>
+</body>
+</html>
