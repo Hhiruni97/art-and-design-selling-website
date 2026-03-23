@@ -5,24 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About - Rivelle Studio</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
-body{margin:0; font-family:'Inter',sans-serif; background:#FDF9F2; color:#2E2E2E; scroll-behavior:smooth;}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@300;400;500&display=swap');
+
+body{margin:0;font-family:'Inter',sans-serif;background:#FDF9F2;color:#2E2E2E;scroll-behavior:smooth;}
 a{text-decoration:none;color:#2E2E2E;}
-#navbar{position:sticky; top:0; width:100%; background:#FFF8F2; box-shadow:0 2px 6px rgba(0,0,0,0.05);}
-nav{display:flex; justify-content:space-between; align-items:center; padding:15px 40px;}
-.logo{font-family:'Playfair Display', serif; font-size:1.8rem; font-weight:bold;}
+#navbar{position:sticky;top:0;width:100%;background:#FFF8F2;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
+.logo{font-family:'Cormorant Garamond', serif; font-size:2.4rem; font-weight:700; color:#1C1C1C; text-shadow:2px 2px 5px rgba(0,0,0,0.2);}
 .nav-links{list-style:none; display:flex; gap:30px;}
 .nav-links li a:hover{color:#C2A974;}
 
-#hero{display:flex; justify-content:center; align-items:center; height:50vh; text-align:center; background:#C2A974; color:#FFF;}
-#hero h1{font-family:'Playfair Display', serif; font-size:3rem; margin-bottom:1rem;}
-#about-content{max-width:900px; margin:0 auto; padding:60px 20px; text-align:center;}
-#about-content h2{font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:1rem; color:#C2A974;}
+#hero{display:flex;justify-content:center;align-items:center;height:50vh;background:#C2A974;color:#FFF;text-align:center;}
+#hero h1{font-family:'Cormorant Garamond', serif; font-size:3rem;}
+
+#about-content{max-width:900px;margin:0 auto;padding:60px 20px;text-align:center;}
+#about-content h2{font-family:'Cormorant Garamond', serif; font-size:2.5rem;margin-bottom:1rem;color:#C2A974;}
 #about-content p{margin-bottom:1.5rem;}
-#about-images{display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:40px;}
-#about-images img{max-width:300px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:transform .3s;}
+#about-images{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:40px;}
+#about-images img{max-width:300px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:transform .3s;}
 #about-images img:hover{transform:scale(1.05);}
-@media(max-width:768px){#hero h1{font-size:2.5rem;} #about-images{flex-direction:column; align-items:center;}}
+@media(max-width:768px){#hero h1{font-size:2.5rem;} #about-images{flex-direction:column;align-items:center;}}
 </style>
 </head>
 <body>
@@ -32,7 +34,6 @@ nav{display:flex; justify-content:space-between; align-items:center; padding:15p
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
-<li><a href="gallery.html">Gallery</a></li>
 <li><a href="shop.html">Shop</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
@@ -45,14 +46,14 @@ nav{display:flex; justify-content:space-between; align-items:center; padding:15p
 
 <section id="about-content">
 <h2>Our Story</h2>
-<p>Rivelle Studio brings elegant, serene art to your living and working spaces. We create each piece with care and refined aesthetics.</p>
+<p>Rivelle Studio brings elegant, serene art to your living and working spaces. Each piece is created with care, designed to inspire calm and beauty.</p>
 <h2>Our Style</h2>
 <p>Soft textures, muted tones, and modern elegance define our artworks, perfect for collectors and art lovers alike.</p>
 <h2>Our Studio</h2>
 <div id="about-images">
-<img src="img_about1.jpg" alt="Studio 1">
-<img src="img_about2.jpg" alt="Studio 2">
-<img src="img_about3.jpg" alt="Studio 3">
+<img src="images/img_about1.jpg" alt="Studio 1">
+<img src="images/img_about2.jpg" alt="Studio 2">
+<img src="images/img_about3.jpg" alt="Studio 3">
 </div>
 </section>
 </body>
