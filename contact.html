@@ -1,156 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - Rivelle Studio</title>
+  <meta charset="UTF-8">
+  <title>Rivelle Studio - Elegant Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #D8C4B6; /* pastel brown */
+      color: #1E1E1E; /* black text */
+    }
 
-<style>
+    nav {
+      background-color: #FFFFFF; /* white nav */
+      padding: 15px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+    nav a {
+      margin: 0 20px;
+      color: #1E1E1E;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a:hover {
+      color: #555;
+    }
 
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #F7F3EF;
-    color: #1F1F1F;
-}
+    /* Hero */
+    .hero {
+      height: 80vh;
+      background-image: url("https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=1470&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-blend-mode: multiply;
+      background-color: rgba(0,0,0,0.4);
+    }
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
 
-/* NAV */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    background-color: #FDFBF9;
-}
+    /* Featured Section */
+    .featured {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #FFFFFF;
+    }
+    .featured h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .art-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .art-grid img {
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-nav a {
-    text-decoration: none;
-    color: #3E2C2C;
-    font-size: 13px;
-    letter-spacing: 1px;
-}
-
-/* HERO */
-.hero {
-    height: 80vh;
-    background-image: url('https://images.unsplash.com/photo-1549887534-3db9d1c8c0c7?auto=format&fit=crop&w=1470&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-/* BIG TITLE */
-.title {
-    text-align: center;
-    padding: 80px 20px 40px;
-}
-
-.title h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    margin: 0;
-}
-
-/* MAIN TEXT */
-.text {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-    line-height: 1.8;
-    color: #555;
-    padding: 0 20px 80px;
-}
-
-/* IMAGE FEATURE */
-.feature-image {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 80px;
-}
-
-.feature-image img {
-    width: 400px;
-    border-radius: 10px;
-}
-
-/* DARK BLOCK */
-.dark {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.dark h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-}
-
-.dark p {
-    color: #bbb;
-    margin-top: 10px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2E2E2E;
-    color: white;
-}
-
-</style>
+    /* Footer */
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #1E1E1E;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
+  <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="gallery.html">Gallery</a>
     <a href="shop.html">Shop</a>
     <a href="contact.html">Contact</a>
-</nav>
+  </nav>
 
-<!-- HERO IMAGE -->
-<div class="hero"></div>
+  <section class="hero">
+    <div>
+      <h1>Rivelle Studio</h1>
+      <p>Elegant, peaceful art for your space</p>
+    </div>
+  </section>
 
-<!-- TITLE -->
-<div class="title">
-    <h1>Rivelle Studio</h1>
-</div>
+  <section class="featured">
+    <h2>Featured Art Pieces</h2>
+    <div class="art-grid">
+      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Art 1">
+      <img src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?auto=format&fit=crop&w=800&q=80" alt="Art 2">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Art 3">
+    </div>
+  </section>
 
-<!-- TEXT -->
-<div class="text">
-    <p>
-        I have been creating art for more than a decade, working across both digital and physical mediums.
-        My work is inspired by softness, calm, and quiet elegance.
-    </p>
-
-    <p>
-        Each piece can be fully customized to reflect your personal vision, creating something that truly belongs in your space.
-    </p>
-
-    <p>
-        This is my personal art space, thoughtfully created and run by myself.
-    </p>
-</div>
-
-<!-- FEATURE IMAGE -->
-<div class="feature-image">
-    <img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=800&q=80">
-</div>
-
-<!-- DARK SECTION -->
-<div class="dark">
-    <h2>Elegant. Peaceful. Timeless.</h2>
-    <p>Art that transforms your space into something meaningful.</p>
-</div>
-
-<footer>
-    © 2026 Rivelle Studio
-</footer>
+  <footer>
+    © 2026 Rivelle Studio — Elegant, peaceful art for your space
+  </footer>
 
 </body>
 </html>
