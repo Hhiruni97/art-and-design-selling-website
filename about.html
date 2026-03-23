@@ -1,35 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivelle Studio - About</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Rivelle Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F6F2EE;
+    color: #2B2B2B;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: #FDFBF9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3E2C2C;
+}
+
+/* HERO DARK */
+.hero-dark {
+    height: 60vh;
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-dark h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
+/* CONTENT */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.about-img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* DARK SECTION */
+.dark-section {
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.dark-section img {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2E2E2E;
+    color: white;
+}
+
+</style>
 </head>
+
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Shop</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <section>
-        <h2>About Rivelle Studio</h2>
-        <p>I have been doing art for more than a decade, both digital and physical, in many different styles. 
-        Anyone can customize an art order the way they want. Welcome to my little art space, run by myself.</p>
+<!-- DARK HERO -->
+<section class="hero-dark">
+    <h1>About Rivelle Studio</h1>
+</section>
 
-        <div class="gallery">
-            <img class="about-img" src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=800&q=80" alt="Floral art">
-            <img class="about-img" src="https://images.unsplash.com/photo-1527259252984-cc9cf98a51eb?auto=format&fit=crop&w=800&q=80" alt="Elegant art">
-        </div>
-    </section>
+<!-- ABOUT CONTENT -->
+<section class="about">
 
-    <footer>
-        &copy; 2026 Rivelle Studio. All rights reserved.
-    </footer>
+    <img class="about-img" src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=800&q=80">
+
+    <div class="about-text">
+        <h2>A Little About Me</h2>
+        <p>
+            I have been creating art for more than a decade, exploring both digital and physical styles.
+            My work is inspired by calm emotions, soft beauty, and elegant simplicity.
+        </p>
+        <p>
+            You can request fully customized artwork based on your own ideas and preferences.
+            Every piece is created with care to match your space and feeling.
+        </p>
+        <p>
+            Welcome to my little art space, lovingly run by myself.
+        </p>
+    </div>
+
+</section>
+
+<!-- DARK MOOD SECTION -->
+<section class="dark-section">
+    <h2>Peaceful & Elegant Creations</h2>
+    <p>Art that brings calm, warmth, and beauty into your everyday space.</p>
+
+    <img src="https://images.unsplash.com/photo-1527259252984-cc9cf98a51eb?auto=format&fit=crop&w=800&q=80">
+</section>
+
+<footer>
+    © 2026 Rivelle Studio
+</footer>
 
 </body>
 </html>
