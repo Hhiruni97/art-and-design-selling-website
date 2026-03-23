@@ -1,301 +1,73 @@
-<header class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto fade-in">
-        <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif text-stone-900 leading-tight mb-4">
-            Rivelle Studio
-        </h1>
-        <p class="text-stone-800 md:text-lg max-w-xl mx-auto mb-10 font-light leading-relaxed">
-            Soft, peaceful and elegant art for your space 🌸
-        </p>
-        <!-- buttons, etc, if you want -->
-    </div>
-</header>
 <!DOCTYPE html>
 <html lang="en">
-    <h1>Rivelle Studio</h1>
-<p>Soft, peaceful and elegant art for your space 🌸</p>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rivelle Studio | Aesthetic & Fine Art</title>
-    <meta name="description" content="Rivelle Studio presents a curated collection of aesthetic photography and fine art. Find balance and beauty for your spaces.">
-    <!-- Tailwind CSS with custom config -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {white, pastal colours
+                    colors: {
                         stone: {
                             50: '#FDFBF7',
                             100: '#F4F1EA',
                             800: '#2D2B2A',
                             900: '#1A1A1A',
                         },
-                        accent: '#8B8070', // Muted earthy tone
+                        accent: '#C8B6A6'
                     },
                     fontFamily: {
                         serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['"Inter"', 'sans-serif'],
+                        sans: ['"Inter"', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Phosphor Icons for elegant lightweight icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body class="bg-stone-50 text-stone-900 antialiased selection:bg-accent selection:text-white">
 
-    <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 top-0 left-0 transition-all duration-500 py-6 bg-transparent">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-serif font-medium tracking-wide">Rivelle Studio.</a>
-            
-            <div class="hidden md:flex items-center space-x-10 text-sm uppercase tracking-widest font-medium text-stone-800">
-                <a href="index.html" class="hover-underline">Home</a>
-                <a href="shop.html" class="hover-underline">Shop</a>
-                <a href="about.html" class="hover-underline">About</a>
-                <a href="contact.html" class="hover-underline">Contact</a>
-            </div>
+<body class="bg-stone-50 text-stone-900 antialiased">
 
-            <div class="flex items-center space-x-6">
-                <!-- Search icon -->
-                <button class="hidden md:block hover:text-accent transition-colors">
-                    <i class="ph ph-magnifying-glass text-xl"></i>
-                </button>
-                <!-- Cart icon -->
-                <a href="shop.html" class="relative hover:text-accent transition-colors flex items-center">
-                    <i class="ph ph-tote text-xl"></i>
-                    <span id="cart-count" class="hidden absolute -top-2 -right-2 bg-accent text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full transition-transform">0</span>
-                </a>
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-2xl">
-                    <i class="ph ph-list"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-stone-50 z-40 hidden flex flex-col pt-32 px-6">
-        <div class="flex flex-col space-y-8 text-2xl font-serif">
-            <a href="index.html" class="border-b border-stone-200 pb-2">Home</a>
-            <a href="shop.html" class="border-b border-stone-200 pb-2">Shop</a>
-            <a href="about.html" class="border-b border-stone-200 pb-2">About</a>
-            <a href="contact.html" class="border-b border-stone-200 pb-2">Contact</a>
-        </div>
-    </div>
-
-    <!-- Hero Section -->
-    <header class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <!-- Using a split aesthetic or a beautiful hero image -->
-            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000&auto=format&fit=crop" alt="Abstract aesthetic painting" class="w-full h-full object-cover opacity-[0.85]">
-            <!-- Subtle gradient overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-50 via-transparent to-stone-50/30"></div>
-        </div>
-        
-        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto fade-in">
-            <span class="block uppercase tracking-[0.3em] text-sm mb-6 text-stone-800 font-medium">Curated Fine Art</span>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif text-stone-900 leading-tight mb-8">
-                Beauty in Balance.
-            </h1>
-            <p class="text-stone-800 md:text-lg max-w-xl mx-auto mb-10 text-balance font-light leading-relaxed">
-                Elevate your space with our curated collection of aesthetic photography and museum-quality fine art prints.
+    <!-- HERO / TOP SECTION -->
+    <header class="relative h-screen flex items-center justify-center bg-stone-50">
+        <div class="text-center px-6 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif mb-4">Rivelle Studio</h1>
+            <p class="text-stone-800 md:text-lg font-light leading-relaxed mb-8">
+                Soft, peaceful and elegant art for your space 🌸
             </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a href="shop.html" class="px-10 py-4 bg-stone-900 text-white uppercase tracking-widest text-sm hover:bg-accent transition-all duration-300 w-full sm:w-auto">Explore Collection</a>
-                <a href="about.html" class="px-10 py-4 border border-stone-900 text-stone-900 uppercase tracking-widest text-sm hover:bg-stone-100 transition-all duration-300 w-full sm:w-auto">Our Story</a>
-            </div>
         </div>
     </header>
 
-    <!-- New Arrivals Section -->
-    <section class="py-24 md:py-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 fade-in">
-                <div class="max-w-xl">
-                    <h2 class="text-4xl md:text-5xl font-serif mb-4">Selected Works</h2>
-                    <p class="text-stone-600 font-light text-balance leading-relaxed">Discover our most recent acquisitions, featuring serene compositions and muted palettes designed to bring tranquility to any room.</p>
-                </div>
-                <a href="shop.html" class="mt-8 md:mt-0 font-medium uppercase tracking-widest text-sm pb-1 border-b border-stone-900 hover:text-accent hover:border-accent transition-colors">View All Works</a>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-                <!-- Product 1 -->
-                <div class="group fade-in cursor-pointer">
-                    <div class="img-hover-zoom aspect-[4/5] bg-stone-100 mb-6 relative">
-                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop" alt="Silent Echoes" class="w-full h-full object-cover">
-                        <!-- Quick Add -->
-                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="add-to-cart w-full py-3 bg-white/90 backdrop-blur-sm text-stone-900 uppercase tracking-widest text-xs font-medium hover:bg-stone-900 hover:text-white transition-colors border border-transparent">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <span class="text-xs uppercase tracking-widest text-stone-500 mb-2 block">Abstract</span>
-                            <h3 class="font-serif text-xl mb-1">Silent Echoes</h3>
-                            <p class="text-sm font-light text-stone-600">Archival Pigment Print</p>
-                        </div>
-                        <span class="text-lg font-medium">$280</span>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="group fade-in cursor-pointer" style="transition-delay: 100ms;">
-                    <div class="img-hover-zoom aspect-[4/5] bg-stone-100 mb-6 relative">
-                        <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=800&auto=format&fit=crop" alt="Morning Haze" class="w-full h-full object-cover">
-                        <!-- Quick Add -->
-                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="add-to-cart w-full py-3 bg-white/90 backdrop-blur-sm text-stone-900 uppercase tracking-widest text-xs font-medium hover:bg-stone-900 hover:text-white transition-colors border border-transparent">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <span class="text-xs uppercase tracking-widest text-stone-500 mb-2 block">Photography</span>
-                            <h3 class="font-serif text-xl mb-1">Morning Haze</h3>
-                            <p class="text-sm font-light text-stone-600">Limited Edition of 50</p>
-                        </div>
-                        <span class="text-lg font-medium">$340</span>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="group fade-in cursor-pointer" style="transition-delay: 200ms;">
-                    <div class="img-hover-zoom aspect-[4/5] bg-stone-100 mb-6 relative">
-                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=800&auto=format&fit=crop" alt="Earth & Form" class="w-full h-full object-cover">
-                        <!-- Quick Add -->
-                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="add-to-cart w-full py-3 bg-white/90 backdrop-blur-sm text-stone-900 uppercase tracking-widest text-xs font-medium hover:bg-stone-900 hover:text-white transition-colors border border-transparent">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <span class="text-xs uppercase tracking-widest text-stone-500 mb-2 block">Mixed Media</span>
-                            <h3 class="font-serif text-xl mb-1">Earth & Form</h3>
-                            <p class="text-sm font-light text-stone-600">Original Artwork</p>
-                        </div>
-                        <span class="text-lg font-medium">$850</span>
-                    </div>
-                </div>
-            </div>
+    <!-- GALLERY SECTION -->
+    <section class="py-16 px-6">
+        <h2 class="text-3xl font-serif mb-8 text-center">Selected Works</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+            <img src="art1.jpg" class="w-64 rounded-xl shadow-md">
+            <img src="art2.jpg" class="w-64 rounded-xl shadow-md">
+            <img src="art3.jpg" class="w-64 rounded-xl shadow-md">
         </div>
     </section>
 
-    <!-- Aesthetic Quote / Editorial Section -->
-    <section class="py-24 bg-stone-900 text-stone-50">
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div class="fade-in">
-                <div class="img-hover-zoom aspect-[3/4] w-full max-w-md mx-auto lg:mx-0">
-                    <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=800&auto=format&fit=crop" alt="Aesthetic ambiance" class="w-full h-full object-cover opacity-90">
-                </div>
-            </div>
-            <div class="fade-in lg:pl-10">
-                <i class="ph ph-quotes text-4xl text-accent mb-6"></i>
-                <h2 class="text-3xl md:text-5xl font-serif leading-snug mb-8">
-                    "Art should not demand your attention; it should transform your space with a quiet, undeniable presence."
-                </h2>
-                <p class="text-stone-400 font-light mb-10 max-w-lg leading-relaxed">
-                    At Rivelle Studio, we believe that true aesthetics lie in harmony. Every piece is carefully selected for its ability to bring a sense of calm and sophistication to your environment.
-                </p>
-                <a href="about.html" class="inline-flex items-center space-x-3 uppercase tracking-widest text-sm hover:text-accent transition-colors">
-                    <span>Read The Manifesto</span>
-                    <i class="ph ph-arrow-right"></i>
-                </a>
-            </div>
-        </div>
+    <!-- ABOUT / QUOTE -->
+    <section class="py-16 px-6 bg-stone-100 text-center">
+        <h2 class="text-3xl font-serif mb-4">Our Philosophy</h2>
+        <p class="text-stone-700 max-w-xl mx-auto mb-6">
+            "Art should not demand your attention; it should transform your space with a quiet, undeniable presence."
+        </p>
+        <p class="text-stone-600 max-w-xl mx-auto">
+            At Rivelle Studio, we curate every piece to bring calm, balance, and elegance to your environment.
+        </p>
     </section>
 
-    <!-- Categories / Collections -->
-    <section class="py-24 md:py-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl md:text-5xl font-serif mb-4">Curated By Style</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Coll 1 -->
-                <a href="shop.html" class="group relative h-[400px] md:h-[600px] overflow-hidden fade-in">
-                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=1200&auto=format&fit=crop" alt="Abstract Art Collection" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
-                    <div class="absolute inset-0 p-10 flex flex-col justify-end text-white text-center">
-                        <h3 class="text-3xl font-serif mb-2">Abstract & Texture</h3>
-                        <p class="text-sm uppercase tracking-widest uppercase mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">Explore Collection</p>
-                    </div>
-                </a>
-                
-                <!-- Coll 2 -->
-                <a href="shop.html" class="group relative h-[400px] md:h-[600px] overflow-hidden fade-in" style="transition-delay: 200ms;">
-                    <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=1200&auto=format&fit=crop" alt="Aesthetic Photography" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
-                    <div class="absolute inset-0 p-10 flex flex-col justify-end text-white text-center">
-                        <h3 class="text-3xl font-serif mb-2">Aesthetic Photography</h3>
-                        <p class="text-sm uppercase tracking-widest uppercase mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">Explore Collection</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="py-24 border-t border-stone-200 px-6">
-        <div class="max-w-3xl mx-auto text-center fade-in">
-            <h2 class="text-3xl md:text-4xl font-serif mb-4">Join The Studio</h2>
-            <p class="text-stone-600 font-light mb-10 text-balance">Subscribe to receive first access to new releases, editorial content, and exclusive studio benefits.</p>
-            
-            <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" onsubmit="event.preventDefault(); showToast('Thank you for subscribing.');">
-                <input type="email" placeholder="Email Address" required class="flex-grow px-6 py-4 bg-transparent border border-stone-300 focus:outline-none focus:border-stone-900 transition-colors placeholder:text-stone-400 font-light">
-                <button type="submit" class="px-10 py-4 bg-stone-900 text-white uppercase tracking-widest text-sm hover:bg-accent transition-colors">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-stone-100 pt-20 pb-10 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-            <div class="md:col-span-2">
-                <h3 class="text-2xl font-serif mb-6">Rivelle Studio.</h3>
-                <p class="text-stone-600 font-light max-w-md leading-relaxed mb-6">
-                    A destination for exquisite aesthetic fine art and photography, curated to elevate your surroundings.
-                </p>
-                <div class="flex space-x-6 text-xl text-stone-600">
-                    <a href="#" class="hover:text-stone-900 transition-colors"><i class="ph ph-instagram-logo"></i></a>
-                    <a href="#" class="hover:text-stone-900 transition-colors"><i class="ph ph-pinterest-logo"></i></a>
-                    <a href="#" class="hover:text-stone-900 transition-colors"><i class="ph ph-twitter-logo"></i></a>
-                </div>
-            </div>
-            
-            <div>
-                <h4 class="font-medium uppercase tracking-widest text-sm mb-6 text-stone-900">Explore</h4>
-                <ul class="space-y-4 text-stone-600 font-light">
-                    <li><a href="shop.html" class="hover:text-stone-900 transition-colors">Shop All</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">Photography</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">Original Paintings</a></li>
-                    <li><a href="about.html" class="hover:text-stone-900 transition-colors">Our Story</a></li>
-                </ul>
-            </div>
-            
-            <div>
-                <h4 class="font-medium uppercase tracking-widest text-sm mb-6 text-stone-900">Assistance</h4>
-                <ul class="space-y-4 text-stone-600 font-light">
-                    <li><a href="contact.html" class="hover:text-stone-900 transition-colors">Contact Us</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">Shipping & Returns</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">FAQ</a></li>
-                    <li><a href="#" class="hover:text-stone-900 transition-colors">Terms of Service</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto border-t border-stone-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-stone-500 font-light">
-            <p>&copy; 2026 Rivelle Studio. All rights reserved.</p>
-            <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-stone-900 transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-stone-900 transition-colors">Terms</a>
-            </div>
-        </div>
+    <!-- FOOTER -->
+    <footer class="bg-stone-50 py-10 text-center text-stone-700">
+        <p>&copy; 2026 Rivelle Studio. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+
 </html>
