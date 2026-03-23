@@ -6,26 +6,114 @@
 <title>About - Rivelle Studio</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
-body{margin:0;font-family:'Inter',sans-serif;background:#F9F8FF;color:#2E2E2E;line-height:1.6;scroll-behavior:smooth}
-a{text-decoration:none;color:#2E2E2E}
-#navbar{position:sticky;top:0;width:100%;background:#FAFAF8;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
-nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px}
-.logo{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:bold;color:#2E2E2E}
-.nav-links{list-style:none;display:flex;gap:30px}
-.nav-links li a:hover{color:#B8A4C9}
-#hero{display:flex;justify-content:center;align-items:center;text-align:center;height:40vh;background:#FFF5F8;padding:0 20px}
-#hero h1{font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:.5rem}
-#about-content{padding:60px 20px;max-width:1000px;margin:0 auto;text-align:center}
-#about-content h2{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1rem;color:#A8D8FF}
-#about-content p{font-size:1.1rem;color:#4E4E4E;margin-bottom:1.2rem}
-#studio-photo{display:flex;justify-content:center;align-items:center;gap:40px;margin-top:40px;flex-wrap:wrap}
-#studio-photo img{max-width:300px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1)}
-#studio-photo p{max-width:500px;color:#4E4E4E;font-size:1.1rem;text-align:left}
-@media(max-width:768px){#hero h1{font-size:2.5rem}#about-content h2{font-size:2rem}#studio-photo{flex-direction:column;text-align:center}#studio-photo p{text-align:center}}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #FDFBF7;
+  color: #2E2E2E;
+  scroll-behavior: smooth;
+}
+
+a { text-decoration: none; color: #2E2E2E; }
+
+#navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #FAFAF8;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2E2E2E;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a:hover { color: #B8A4C9; }
+
+/* Hero Section */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh;
+  background-color: #FFF5F8;
+  padding: 0 20px;
+}
+
+#hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* About Content Section */
+#about-content {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #A8D8FF;
+}
+
+#about-content p {
+  font-size: 1.1rem;
+  color: #4E4E4E;
+  margin-bottom: 1.5rem;
+}
+
+/* About Images Section */
+#about-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+#about-images img {
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#about-images img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  #hero h1 { font-size: 2.5rem; }
+  #about-images { flex-direction: column; align-items: center; }
+}
 </style>
 </head>
 <body>
 
+<!-- Navbar -->
 <header id="navbar">
 <nav>
 <div class="logo">Rivelle Studio</div>
@@ -38,8 +126,14 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:15px 4
 </nav>
 </header>
 
-<section id="hero"><div class="hero-content"><h1>About Rivelle Studio</h1></div></section>
+<!-- Hero -->
+<section id="hero">
+<div class="hero-content">
+<h1>About Rivelle Studio</h1>
+</div>
+</section>
 
+<!-- About Content -->
 <section id="about-content">
 <h2>Our Story</h2>
 <p>Rivelle Studio was created to bring soft, peaceful, and elegant art into every space. Every piece we craft inspires calm, joy, and creativity.</p>
@@ -50,11 +144,14 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:15px 4
 <h2>Why Choose Us</h2>
 <p>With over a decade of experience in hand drawing, painting, and digital design, Rivelle Studio combines traditional techniques with modern aesthetics.</p>
 
-<div id="studio-photo">
-<img src="studio.jpg" alt="Studio or Artist Photo">
-<p>This is where creativity happens! Our studio is a calm, peaceful space designed to inspire every brushstroke and digital creation.</p>
+<!-- Images -->
+<div id="about-images">
+<img src="studio1.jpg" alt="Studio 1">
+<img src="studio2.jpg" alt="Studio 2">
+<img src="studio3.jpg" alt="Studio 3">
 </div>
 
 </section>
+
 </body>
 </html>
