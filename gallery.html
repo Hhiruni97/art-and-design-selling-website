@@ -6,23 +6,26 @@
 <title>Gallery - Rivelle Studio</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
-body{margin:0;font-family:'Inter',sans-serif;background:#F0FAF9;scroll-behavior:smooth;color:#2E2E2E}
-a{text-decoration:none;color:#2E2E2E}
-#navbar{position:sticky;top:0;width:100%;background:#FAFAF8;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
-nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px}
-.logo{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:bold;color:#2E2E2E}
-.nav-links{list-style:none;display:flex;gap:30px}
-.nav-links li a:hover{color:#B8A4C9}
-#hero{display:flex;justify-content:center;align-items:center;text-align:center;height:40vh;background:#FFF5F8;padding:0 20px}
-#hero h1{font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:.5rem}
-#gallery-content{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;padding:60px 20px}
-.gallery-item{max-width:350px;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:transform .3s,box-shadow .3s}
-.gallery-item img{width:100%;display:block}
-.gallery-item:hover{transform:scale(1.05);box-shadow:0 12px 30px rgba(0,0,0,0.15)}
-@media(max-width:768px){#hero h1{font-size:2.5rem}.gallery-item{max-width:90%}nav{flex-direction:column;gap:15px}.nav-links{flex-direction:column;gap:15px}}
+body{margin:0;font-family:'Inter',sans-serif;background:#FDF9F2;color:#2E2E2E;scroll-behavior:smooth;}
+a{text-decoration:none;color:#2E2E2E;}
+#navbar{position:sticky;top:0;width:100%;background:#FFF8F2;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
+.logo{font-family:'Playfair Display', serif;font-size:1.8rem;font-weight:bold;}
+.nav-links{list-style:none;display:flex;gap:30px;}
+.nav-links li a:hover{color:#C2A974;}
+
+#hero{display:flex;justify-content:center;align-items:center;height:50vh;background:#C2A974;color:#FFF;text-align:center;}
+#hero h1{font-family:'Playfair Display', serif;font-size:3rem;}
+
+#gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;padding:60px 20px;}
+.gallery-item{background:#FFF8F2;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:transform .3s, box-shadow .3s;width:300px;text-align:center;}
+.gallery-item img{width:100%; display:block;}
+.gallery-item:hover{transform:scale(1.05); box-shadow:0 12px 30px rgba(0,0,0,0.15);}
+@media(max-width:768px){#hero h1{font-size:2.5rem;} .gallery-item{width:90%;}}
 </style>
 </head>
 <body>
+
 <header id="navbar">
 <nav>
 <div class="logo">Rivelle Studio</div>
@@ -30,20 +33,21 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:15px 4
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="gallery.html">Gallery</a></li>
+<li><a href="shop.html">Shop</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
 </header>
 
-<section id="hero"><div class="hero-content"><h1>Gallery</h1></div></section>
+<section id="hero"><h1>Gallery</h1></section>
 
-<section id="gallery-content">
-<div class="gallery-item"><img src="img1.jpg" alt="Art 1"></div>
-<div class="gallery-item"><img src="img2.jpg" alt="Art 2"></div>
-<div class="gallery-item"><img src="img3.jpg" alt="Art 3"></div>
-<div class="gallery-item"><img src="img4.jpg" alt="Art 4"></div>
-<div class="gallery-item"><img src="img5.jpg" alt="Art 5"></div>
-<div class="gallery-item"><img src="img6.jpg" alt="Art 6"></div>
+<section id="gallery-grid">
+<div class="gallery-item"><img src="art1.jpg" alt="Art 1"></div>
+<div class="gallery-item"><img src="art2.jpg" alt="Art 2"></div>
+<div class="gallery-item"><img src="art3.jpg" alt="Art 3"></div>
+<div class="gallery-item"><img src="art4.jpg" alt="Art 4"></div>
+<div class="gallery-item"><img src="art5.jpg" alt="Art 5"></div>
 </section>
+
 </body>
 </html>
