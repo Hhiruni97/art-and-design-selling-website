@@ -6,30 +6,31 @@
 <title>Rivelle Studio</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
-body { margin:0; font-family:'Inter',sans-serif; scroll-behavior:smooth; background:#FDFBF7;}
+
+body { margin:0; font-family:'Inter',sans-serif; background:#FDF9F2; color:#2E2E2E; scroll-behavior:smooth;}
 a{text-decoration:none;color:#2E2E2E;}
-#navbar{position:sticky;top:0;width:100%;background:#FAFAF8;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
-nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
-.logo{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:bold;color:#2E2E2E;}
-.nav-links{list-style:none;display:flex;gap:30px;}
-.nav-links li a:hover{color:#B8A4C9;}
-#hero{display:flex;justify-content:center;align-items:center;text-align:center;height:100vh;background:#FFF5F8;padding:0 20px;}
-#hero h1{font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:0.5rem;color:#2E2E2E;}
-#hero .tagline{font-size:1.5rem;color:#B8A4C9;margin-bottom:1.5rem;}
-.btn{background:#FFD8B8;color:#2E2E2E;padding:.8rem 2rem;border:none;border-radius:25px;font-weight:500;transition:background .3s;}
-.btn:hover{background:#FFC79A;}
-#gallery{padding:80px 20px;display:flex;justify-content:center;flex-wrap:wrap;gap:30px;background:#F0FAF9;}
-.gallery-item img{width:100%;max-width:350px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:transform .3s,box-shadow .3s;}
-.gallery-item img:hover{transform:scale(1.05);box-shadow:0 12px 30px rgba(0,0,0,0.15);}
-#about{padding:60px 20px;text-align:center;background:#F9F8FF;}
-#about h2{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1rem;color:#A8D8FF;}
-#about p{max-width:700px;margin:0 auto;color:#6E6E6E;font-size:1.1rem;}
-@media(max-width:768px){#hero h1{font-size:2.5rem}#hero .tagline{font-size:1.2rem}.gallery-item img{max-width:90%}nav{flex-direction:column;gap:15px}.nav-links{flex-direction:column;gap:15px}}
+
+#navbar {position:sticky; top:0; width:100%; background:#FFF8F2; box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+nav{display:flex; justify-content:space-between; align-items:center; padding:15px 40px;}
+.logo{font-family:'Playfair Display', serif; font-size:1.8rem; font-weight:bold;}
+.nav-links{list-style:none; display:flex; gap:30px;}
+.nav-links li a:hover{color:#C2A974;}
+
+#hero{display:flex; justify-content:center; align-items:center; height:90vh; text-align:center; background:url('img_home.jpg') center/cover no-repeat; color:#FFF;}
+#hero h1{font-family:'Playfair Display', serif; font-size:4rem; margin-bottom:1rem; text-shadow:2px 2px 5px rgba(0,0,0,0.5);}
+#hero p{font-size:1.5rem; margin-bottom:2rem; text-shadow:1px 1px 3px rgba(0,0,0,0.5);}
+.btn{background:#C2A974; color:#FFF; padding:15px 30px; border-radius:25px; font-weight:500; transition:0.3s;}
+.btn:hover{background:#B5955F;}
+
+#preview-gallery{display:flex; justify-content:center; gap:30px; flex-wrap:wrap; padding:60px 20px;}
+.preview-item img{width:100%; max-width:300px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:transform .3s;}
+.preview-item img:hover{transform:scale(1.05);}
+
+@media(max-width:768px){#hero h1{font-size:3rem;}#hero p{font-size:1.2rem;}}
 </style>
 </head>
 <body>
 
-<!-- Navbar -->
 <header id="navbar">
 <nav>
 <div class="logo">Rivelle Studio</div>
@@ -37,31 +38,24 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:15px 4
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="gallery.html">Gallery</a></li>
+<li><a href="shop.html">Shop</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
 </header>
 
-<!-- Hero -->
 <section id="hero">
-<div class="hero-content">
+<div>
 <h1>Rivelle Studio</h1>
-<p class="tagline">Soft, peaceful & elegant art for your space</p>
-<a href="gallery.html" class="btn">Explore Our Art</a>
+<p>Elegant, peaceful art for your space</p>
+<a href="gallery.html" class="btn">Explore Art</a>
 </div>
 </section>
 
-<!-- Gallery preview -->
-<section id="gallery">
-<div class="gallery-item"><img src="img1.jpg" alt="Art 1"></div>
-<div class="gallery-item"><img src="img2.jpg" alt="Art 2"></div>
-<div class="gallery-item"><img src="img3.jpg" alt="Art 3"></div>
-</section>
-
-<!-- About preview -->
-<section id="about">
-<h2>About the Studio</h2>
-<p>Welcome to Rivelle Studio — where we craft soft, contemplative visuals that bring calm beauty into your space. Explore our world of expression.</p>
+<section id="preview-gallery">
+<div class="preview-item"><img src="art1.jpg" alt="Art 1"></div>
+<div class="preview-item"><img src="art2.jpg" alt="Art 2"></div>
+<div class="preview-item"><img src="art3.jpg" alt="Art 3"></div>
 </section>
 
 </body>
