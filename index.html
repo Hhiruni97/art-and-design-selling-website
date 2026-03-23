@@ -1,73 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- ====== Navigation Bar ====== -->
+<header id="navbar">
+  <nav>
+    <div class="logo">Rivelle Studio</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivelle Studio | Aesthetic & Fine Art</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        stone: {
-                            50: '#FDFBF7',
-                            100: '#F4F1EA',
-                            800: '#2D2B2A',
-                            900: '#1A1A1A',
-                        },
-                        accent: '#C8B6A6'
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['"Inter"', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-</head>
+<!-- ====== Hero Section ====== -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Rivelle Studio</h1>
+    <p class="tagline">Soft, peaceful & elegant art for your space</p>
+    <a href="#gallery" class="btn">Explore Our Art</a>
+  </div>
+</section>
 
-<body class="bg-stone-50 text-stone-900 antialiased">
+<!-- ====== Gallery Section ====== -->
+<section id="gallery">
+  <div class="gallery-container">
+    <div class="gallery-item"><img src="img1.jpg" alt="Art 1"></div>
+    <div class="gallery-item"><img src="img2.jpg" alt="Art 2"></div>
+    <div class="gallery-item"><img src="img3.jpg" alt="Art 3"></div>
+  </div>
+</section>
 
-    <!-- HERO / TOP SECTION -->
-    <header class="relative h-screen flex items-center justify-center bg-stone-50">
-        <div class="text-center px-6 max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif mb-4">Rivelle Studio</h1>
-            <p class="text-stone-800 md:text-lg font-light leading-relaxed mb-8">
-                Soft, peaceful and elegant art for your space 🌸
-            </p>
-        </div>
-    </header>
+<!-- ====== About Section ====== -->
+<section id="about">
+  <h2>About the Studio</h2>
+  <p>Welcome to Rivelle Studio — where we craft soft, contemplative visuals that bring calm beauty into your space. Whether you love vibrant pieces or serene minimalism, explore our world of expression.</p>
+</section>
 
-    <!-- GALLERY SECTION -->
-    <section class="py-16 px-6">
-        <h2 class="text-3xl font-serif mb-8 text-center">Selected Works</h2>
-        <div class="flex flex-wrap justify-center gap-6">
-            <img src="art1.jpg" class="w-64 rounded-xl shadow-md">
-            <img src="art2.jpg" class="w-64 rounded-xl shadow-md">
-            <img src="art3.jpg" class="w-64 rounded-xl shadow-md">
-        </div>
-    </section>
+<!-- ====== CSS Styling ====== -->
+<style>
+  /* Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
 
-    <!-- ABOUT / QUOTE -->
-    <section class="py-16 px-6 bg-stone-100 text-center">
-        <h2 class="text-3xl font-serif mb-4">Our Philosophy</h2>
-        <p class="text-stone-700 max-w-xl mx-auto mb-6">
-            "Art should not demand your attention; it should transform your space with a quiet, undeniable presence."
-        </p>
-        <p class="text-stone-600 max-w-xl mx-auto">
-            At Rivelle Studio, we curate every piece to bring calm, balance, and elegance to your environment.
-        </p>
-    </section>
+  /* General */
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAF8;
+    color: #2E2E2E;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
 
-    <!-- FOOTER -->
-    <footer class="bg-stone-50 py-10 text-center text-stone-700">
-        <p>&copy; 2026 Rivelle Studio. All rights reserved.</p>
-    </footer>
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-</body>
+  /* ===== Navigation Bar ===== */
+  #navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #FAFAF8;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
 
-</html>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #2E2E2E;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-links li a {
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+    color: #B8A4C9;
+  }
+
+  /* Hero Section */
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #FAFAF8;
+    padding: 0 20px;
+  }
+
+  #hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #hero .tagline {
+    font-size: 1.5rem;
+    color: #B8A4C9;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    background-color: #E0C8A8;
+    color: #2E2E2E;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #d4b590;
+  }
+
+  /* Gallery Section */
+  #gallery {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #FDFBF7;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+
+  /* About Section */
+  #about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FAFAF8;
+  }
+
+  #about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2E2E2E;
+  }
+
+  #about p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #6E6E6E;
+    font-size: 1.1rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+
+    #hero .tagline {
+      font-size: 1.2rem;
+    }
+
+    .gallery-item img {
+      max-width: 90%;
+    }
+
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+</style>
