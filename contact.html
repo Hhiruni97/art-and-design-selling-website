@@ -1,196 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Rivelle Studio</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #FDFBF7; /* soft cream */
-      scroll-behavior: smooth;
-      color: #2E2E2E;
-    }
-
-    a { text-decoration: none; color: #2E2E2E; }
-
-    /* Navigation Bar */
-    #navbar {
-      position: sticky;
-      top: 0;
-      width: 100%;
-      background-color: #FAFAF8;
-      z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-    }
-
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: #2E2E2E;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-    }
-
-    .nav-links li a:hover { color: #B8A4C9; } /* lavender hover */
-
-    /* Hero Section */
-    #hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 40vh;
-      background-color: #FFF5F8; /* soft pink */
-      padding: 0 20px;
-    }
-
-    #hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    /* Contact Section */
-    #contact-section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    #contact-section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #A8D8FF; /* soft blue */
-    }
-
-    #contact-section p {
-      font-size: 1.1rem;
-      color: #4E4E4E;
-      margin-bottom: 1.5rem;
-    }
-
-    /* Contact Form */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      background-color: #F9F8FF; /* soft lavender */
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-
-    input, textarea {
-      padding: 12px 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-family: 'Inter', sans-serif;
-      resize: none;
-    }
-
-    button {
-      background-color: #FFD8B8; /* soft peach */
-      border: none;
-      padding: 12px 20px;
-      border-radius: 25px;
-      font-size: 1rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #FFC79A; /* darker peach */
-    }
-
-    /* Contact Info Section */
-    #contact-info {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      text-align: center;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      #hero h1 { font-size: 2.5rem; }
-      form { padding: 20px; }
-    }
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Rivelle Studio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+body{margin:0;font-family:'Inter',sans-serif;background:#FDFBF7;color:#2E2E2E;scroll-behavior:smooth}
+a{text-decoration:none;color:#2E2E2E}
+#navbar{position:sticky;top:0;width:100%;background:#FAFAF8;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px}
+.logo{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:bold;color:#2E2E2E}
+.nav-links{list-style:none;display:flex;gap:30px}
+.nav-links li a:hover{color:#B8A4C9}
+#hero{display:flex;justify-content:center;align-items:center;text-align:center;height:40vh;background:#FFF5F8;padding:0 20px}
+#hero h1{font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:.5rem}
+#contact-section{padding:60px 20px;max-width:900px;margin:0 auto;text-align:center}
+#contact-section h2{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1rem;color:#A8D8FF}
+#contact-section p{font-size:1.1rem;color:#4E4E4E;margin-bottom:1.5rem}
+form{display:flex;flex-direction:column;gap:20px;background:#F9F8FF;padding:30px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1)}
+input,textarea{padding:12px 15px;border:1px solid #ccc;border-radius:8px;font-size:1rem;font-family:'Inter',sans-serif;resize:none}
+button{background:#FFD8B8;border:none;padding:12px 20px;border-radius:25px;font-size:1rem;font-weight:500;cursor:pointer;transition:background .3s}
+button:hover{background:#FFC79A}
+#contact-info{margin-top:50px;display:flex;flex-direction:column;gap:15px;text-align:center}
+@media(max-width:768px){#hero h1{font-size:2.5rem}form{padding:20px}}
+</style>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <header id="navbar">
-    <nav>
-      <div class="logo">Rivelle Studio</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Contact Us</h1>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact-section">
-    <h2>Get in Touch</h2>
-    <p>Have questions or want to commission a piece? Fill out the form below or use the contact info to reach us directly.</p>
-
-    <!-- Contact Form -->
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <!-- Contact Info -->
-    <div id="contact-info">
-      <p>Email: <strong>hello@rivellestudio.com</strong></p>
-      <p>Phone: <strong>+94 77 123 4567</strong></p>
-      <p>Location: <strong>Kegalle, Sri Lanka</strong></p>
-    </div>
-  </section>
 <header id="navbar">
-  <nav>
-    <div class="logo">Rivelle Studio</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+<div class="logo">Rivelle Studio</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 </header>
+
+<section id="hero"><div class="hero-content"><h1>Contact Us</h1></div></section>
+
+<section id="contact-section">
+<h2>Get in Touch</h2>
+<p>Have questions or want to commission a piece? Fill out the form below or use the contact info to reach us directly.</p>
+
+<form>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<div id="contact-info">
+<p>Email: <strong>hello@rivellestudio.com</strong></p>
+<p>Phone: <strong>+94 77 123 4567</strong></p>
+<p>Location: <strong>Kegalle, Sri Lanka</strong></p>
+</div>
+
+</section>
 </body>
 </html>
