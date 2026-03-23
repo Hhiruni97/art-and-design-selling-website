@@ -8,19 +8,20 @@
 <style>
     /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background-color: #1C1B19; color: #FFFFFF; line-height: 1.7; }
+    body { font-family: 'Inter', sans-serif; background-color: #FDFBF7; color: #2C2A28; line-height: 1.7; }
 
     a { text-decoration: none; color: inherit; }
 
     /* Navigation Bar */
     nav {
-        background-color: #3B2F2F;
+        background-color: #DAD7D2;
         display: flex;
         justify-content: center;
         padding: 20px 0;
         position: sticky;
         top: 0;
         z-index: 10;
+        border-bottom: 1px solid #CFCAC4;
     }
     nav a {
         margin: 0 15px;
@@ -28,21 +29,21 @@
         font-size: 1rem;
         padding: 8px 16px;
         border-radius: 8px;
-        color: #FFFFFF;
+        color: #2C2A28;
         transition: background 0.3s;
     }
-    nav a:hover { background-color: #5A463F; }
+    nav a:hover { background-color: #CFCAC4; }
 
     /* Header */
     header {
         text-align: center;
-        padding: 100px 20px 60px;
+        padding: 80px 20px 40px;
         background-color: #FFFFFF;
         color: #3B2F2F;
         border-radius: 20px;
         max-width: 800px;
         margin: 50px auto 20px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         position: relative;
         overflow: hidden;
     }
@@ -54,14 +55,18 @@
         position: absolute;
         top: -50px; left: -50px;
         width: 150px; height: 150px;
-        background-color: #3B2F2F; border-radius: 50%; z-index: -1;
+        background-color: #DAD7D2;
+        border-radius: 50%;
+        z-index: -1;
     }
     header::after {
         content: '';
         position: absolute;
         bottom: -70px; right: -60px;
         width: 200px; height: 200px;
-        background-color: #1C1B19; border-radius: 50%; z-index: -1;
+        background-color: #F2E9E4;
+        border-radius: 50%;
+        z-index: -1;
     }
 
     /* Gallery Grid */
@@ -76,13 +81,14 @@
         gap: 30px;
     }
     .grid-item {
-        background-color: #3B2F2F;
+        background-color: #FFFFFF;
         border-radius: 20px;
         overflow: hidden;
         position: relative;
         transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
-    .grid-item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+    .grid-item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
     .grid-item img {
         width: 100%;
@@ -107,10 +113,11 @@
     footer {
         text-align: center;
         padding: 35px 20px;
-        background-color: #2C2623; /* ash black */
-        color: #FFFFFF;
+        background-color: #DAD7D2;
+        color: #2C2A28;
         font-size: 0.9rem;
         margin-top: 50px;
+        border-top: 1px solid #CFCAC4;
     }
 
     /* Responsive */
@@ -143,7 +150,6 @@
             <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+3" alt="Art 3"></div>
             <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+4" alt="Art 4"></div>
             <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+5" alt="Art 5"></div>
-            <div class="grid-item"><img src="https://via.placeholder.com/400x400?text=Art+6" alt="Art 6"></div>
         </div>
 
         <a href="index.html" class="btn">Back to Home</a>
