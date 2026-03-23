@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rivelle Studio</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@300;400;500&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivelle Studio</title>
+    <!-- Google Fonts for elegance -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #F4F1ED; /* soft ash background */
+            color: #333;
+        }
 
-body { margin:0; font-family:'Inter',sans-serif; background:#FDF9F2; color:#2E2E2E; scroll-behavior:smooth;}
-a{text-decoration:none;color:#2E2E2E;}
+        /* Header section */
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
 
-#navbar {position:sticky; top:0; width:100%; background:#FFF8F2; box-shadow:0 2px 6px rgba(0,0,0,0.05);}
-nav {display:flex; justify-content:space-between; align-items:center; padding:15px 40px;}
-.logo { font-family:'Cormorant Garamond', serif; font-size:2.4rem; font-weight:700; color:#1C1C1C; text-shadow:2px 2px 5px rgba(0,0,0,0.2);}
-.nav-links{list-style:none; display:flex; gap:30px;}
-.nav-links li a:hover { color:#C2A974; }
+        /* Hero background image */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1470&q=80'); 
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
 
-#hero { display:flex; justify-content:center; align-items:center; height:90vh; text-align:center; background: url('images/img_home.jpg') center/cover no-repeat; color:#FFF;}
-#hero h1 { font-family:'Cormorant Garamond', serif; font-size:4rem; margin-bottom:1rem; text-shadow:2px 2px 5px rgba(0,0,0,0.5);}
-#hero p { font-size:1.5rem; margin-bottom:2rem; text-shadow:1px 1px 3px rgba(0,0,0,0.5);}
-.btn { background:#C2A974; color:#FFF; padding:15px 30px; border-radius:25px; font-weight:500; transition:0.3s;}
-.btn:hover { background:#A98C5B; }
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4em;
+            margin: 0;
+            color: #2E1F1F; /* pastel brown-ish */
+        }
 
-#preview-gallery { display:flex; justify-content:center; gap:30px; flex-wrap:wrap; padding:60px 20px;}
-.preview-item img { width:100%; max-width:300px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:transform .3s;}
-.preview-item img:hover { transform:scale(1.05); }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #555; /* soft black/grey */
+        }
 
-@media(max-width:768px){ #hero h1{font-size:3rem;} #hero p{font-size:1.2rem;} }
-</style>
+        /* Section for images */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background-color: #FAF8F5; /* soft white-ish */
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2E2E2E; /* dark ash/black */
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
 
-<header id="navbar">
-<nav>
-<div class="logo">Rivelle Studio</div>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="shop.html">Shop</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
+    <header class="hero">
+        <h1>Rivelle Studio</h1>
+        <p>Elegant, peaceful art for your space</p>
+    </header>
 
-<section id="hero">
-<div>
-<h1>Rivelle Studio</h1>
-<p>Elegant, peaceful art for your space</p>
-<a href="gallery.html" class="btn">Explore Art</a>
-</div>
-</section>
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Art sample 1">
+        <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?auto=format&fit=crop&w=800&q=80" alt="Art sample 2">
+        <img src="https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?auto=format&fit=crop&w=800&q=80" alt="Art sample 3">
+    </section>
 
-<section id="preview-gallery">
-<div class="preview-item"><img src="images/art1.jpg" alt="Art 1"></div>
-<div class="preview-item"><img src="images/art2.jpg" alt="Art 2"></div>
-<div class="preview-item"><img src="images/art3.jpg" alt="Art 3"></div>
-</section>
+    <footer>
+        &copy; 2026 Rivelle Studio. All rights reserved.
+    </footer>
 
 </body>
 </html>
