@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop - Rivelle Studio</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@300;400;500&display=swap');
-
-body{margin:0;font-family:'Inter',sans-serif;background:#FDF9F2;color:#2E2E2E;scroll-behavior:smooth;}
-a{text-decoration:none;color:#2E2E2E;}
-#navbar{position:sticky;top:0;width:100%;background:#FFF8F2;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
-nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
-.logo{font-family:'Cormorant Garamond', serif; font-size:2.4rem; font-weight:700; color:#1C1C1C; text-shadow:2px 2px 5px rgba(0,0,0,0.2);}
-.nav-links{list-style:none; display:flex; gap:30px;}
-.nav-links li a:hover{color:#C2A974;}
-
-#hero{display:flex;justify-content:center;align-items:center;height:50vh;background:#C2A974;color:#FFF;text-align:center;}
-#hero h1{font-family:'Cormorant Garamond', serif; font-size:3rem;}
-
-#shop-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;padding:60px 20px;}
-.shop-item{background:#FFF8F2;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:transform .3s, box-shadow .3s;width:300px;text-align:center;}
-.shop-item img{width:100%; display:block;}
-.shop-item:hover{transform:scale(1.05); box-shadow:0 12px 30px rgba(0,0,0,0.15);}
-.shop-item h3{font-family:'Cormorant Garamond', serif;margin:15px 0 5px 0;}
-.shop-item p{margin:5px 0 15px 0;}
-.shop-item button{background:#C2A974;color:#FFF;border:none;padding:12px 20px;border-radius:25px;margin-bottom:15px;cursor:pointer;transition:0.3s;}
-.shop-item button:hover{background:#A98C5B;}
-@media(max-width:768px){#hero h1{font-size:2.5rem;} .shop-item{width:90%;}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivelle Studio - Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .filter {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .filter select {
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-<header id="navbar">
-<nav>
-<div class="logo">Rivelle Studio</div>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="shop.html">Shop</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
 
-<section id="hero"><h1>Shop Our Art</h1></section>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<section id="shop-grid">
-<div class="shop-item"><img src="images/art1.jpg" alt="Art 1"><h3>Art 1</h3><p>$50</p><button>Buy</button></div>
-<div class="shop-item"><img src="images/art2.jpg" alt="Art 2"><h3>Art 2</h3><p>$70</p><button>Buy</button></div>
-<div class="shop-item"><img src="images/art3.jpg" alt="Art 3"><h3>Art 3</h3><p>$100</p><button>Buy</button></div>
-<div class="shop-item"><img src="images/art4.jpg" alt="Art 4"><h3>Art 4</h3><p>$120</p><button>Buy</button></div>
-<div class="shop-item"><img src="images/art5.jpg" alt="Art 5"><h3>Art 5</h3><p>$150</p><button>Buy</button></div>
-</section>
+    <section>
+        <h2>Shop</h2>
+
+        <div class="filter">
+            <label for="price">Sort by price:</label>
+            <select id="price" name="price">
+                <option value="low-high">Low to High</option>
+                <option value="high-low">High to Low</option>
+            </select>
+        </div>
+
+        <div class="gallery">
+            <!-- Blank placeholders for art -->
+            <a href="shop-item.html"><img class="shop-img" src="https://via.placeholder.com/300x200?text=Art+1" alt="Art 1"></a>
+            <a href="shop-item.html"><img class="shop-img" src="https://via.placeholder.com/300x200?text=Art+2" alt="Art 2"></a>
+            <a href="shop-item.html"><img class="shop-img" src="https://via.placeholder.com/300x200?text=Art+3" alt="Art 3"></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Rivelle Studio. All rights reserved.
+    </footer>
+
 </body>
 </html>
